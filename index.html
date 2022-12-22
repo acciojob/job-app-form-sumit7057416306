@@ -8,32 +8,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p class="questions">
-        <h3>1.Who was the first female to become the governor of an Indian state?</h3>
-<form action=""><input type="radio"  name="capital" value="Mumbai" onclick="">Sarojini Naidu<br>
-<input type="radio" name="capital" value="New-Delhi" onclick="">Lata-Mangeshkar
-</form>
-<blockquote cite="https://www.toppr.com/ask/question/who-was-the-first-woman-governor-of-any-state-in-india/">
-    Sarojini Naidu was the first woman to become the governor of an Indian state. 
-</blockquote>
-<br>
-<h3>2.Who among first Woman to climb Mount Everest twice?</h3>
-<form action=""><input type="radio"  name="capital" value="Mumbai" onclick="">Sania Mirza<br>
-<input type="radio" name="capital" value="New-Delhi" onclick="">Santosh Yadav
-</form>
-<blockquote cite="https://en.wikipedia.org/wiki/Santosh_Yadav#:~:text=Santosh%20Yadav%20(born%2010%20October,Mount%20Everest%20from%20Kangshung%20Face.">
-    Santosh Yadav is the first woman in the world to climb Mount Everest twice  
-</blockquote>
-<br>
-<h3>3.Who is President of India?</h3>
-<form action=""><input type="radio"  name="capital" value="Mumbai" onclick="">Droupadi Murmu<br>
-<input type="radio" name="capital" value="New-Delhi" onclick="">Narendra Modi
-</form>
-<blockquote cite="https://en.wikipedia.org/wiki/Droupadi_Murmu">
-    Droupadi Murmu is the President of India 
-</blockquote>
+ <form method="post" action="">
 
-    </p>
+        <div class="one">
     
-</body>
+        <label for="name">Name <input type="text"  id="name" required></label><br>
+        <label for="email">Email <input type="email"  id="email" required></label><br>
+        <label for="password">Password <input type="password"  id="password" min="8" required></label><br>
+        <label for="dob">DOB <input type="date"  id="dob"required></label><br>
+        <label for="age">Age <input type="number"id="age" min="15" max="99" required></label><br>
+        <label for="portfolio">Portfolio URL <input type="url" id="portfolio"></label><br>	
+    
+        </div>
+    
+        <div class="two">
+    
+        <label for="gender"><input type="radio"name="gender" required> Male</label>
+        <label for="gender"><input type="radio"name="gender" required> Female</label>
+        <label for="gender"><input type="radio"name="gender" required> Other</label><br>
+        <select id="laptop">
+    <option>Laptop brands</option>
+    <option>Apple</option>
+    <option>Asus</option>
+    <option>HP</option>
+        </select>
+    
+    </div>
+    
+    </form>
+    
+    <button>Submit</button>
+    
 </html>
